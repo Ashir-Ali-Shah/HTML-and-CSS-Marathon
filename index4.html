@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparing CSS Styling Methods</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        blockquote {
+            border-left: 4px solid #ccc;
+            margin: 20px 0;
+            padding-left: 16px;
+            color: #555;
+            font-style: italic;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .essay {
+            max-width: 800px;
+            margin: auto;
+        }
+        .pros-cons {
+            background-color: #f9f9f9;
+            border-left: 6px solid green;
+            margin: 20px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Understanding CSS Styling Methods</h1>
+</header>
+
+<section>
+    <h2>Inspirational Quotes</h2>
+    <blockquote>
+        “The only way to do great work is to love what you do.” – Steve Jobs
+    </blockquote>
+    <blockquote>
+        “Design is not just what it looks like and feels like. Design is how it works.” – Steve Jobs
+    </blockquote>
+</section>
+
+<section class="essay">
+    <h2>Comparing External CSS and Inline Styling</h2>
+    <p>
+        When it comes to web design and development, styling plays a crucial role in presenting content. CSS, or Cascading Style Sheets, is the language used for styling HTML documents. There are several methods to apply CSS, notably through external stylesheets and inline styles. Each method has its own set of advantages and disadvantages.
+    </p>
+    <div class="pros-cons">
+        <h3>Pros of External CSS</h3>
+        <ul>
+            <li>Reusability: Styles can be applied to multiple pages, promoting consistency across a website.</li>
+            <li>Maintenance: Centralized styling makes it easier to update and manage site-wide changes.</li>
+            <li>Performance: Reduces page load times by caching the stylesheet on the user's device.</li>
+        </ul>
+    </div>
+    <div class="pros-cons">
+        <h3>Cons of External CSS</h3>
+        <ul>
+            <li>Complexity: Managing large stylesheets can be challenging, especially for large websites.</li>
+            <li>Dependency: The webpage's appearance might be affected if the external stylesheet fails to load.</li>
+        </ul>
+    </div>
+    <div class="pros-cons" style="border-left-color: red;">
+        <h3>Pros of Inline Styling</h3>
+        <ul>
+            <li>Quick modifications: Convenient for small, quick changes to a single element's style.</li>
+            <li>Priority: Inline styles take precedence over external and internal stylesheets, allowing for specific overrides.</li>
+        </ul>
+    </div>
+    <div class="pros-cons" style="border-left-color: red;">
+        <h3>Cons of Inline Styling</h3>
+        <ul>
+            <li>Scalability: Not suitable for styling large websites as it makes maintenance difficult.</li>
+            <li>Code readability: Clutters the HTML document, making it harder to read and maintain.</li>
+            <li>Reusability: Styles are not reusable across multiple elements or pages, leading to duplication.</li>
+        </ul>
+    </div>
+    <p>
+        In conclusion, while inline styling offers quick fixes and specific overrides, external CSS is favored for its efficiency, maintainability, and scalability. The choice between these methods depends on the specific needs of the project, the scale of the website, and the long-term maintenance plan.
+    </p>
+</section>
+
+</body>
+</html>
